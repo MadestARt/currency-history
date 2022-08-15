@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    username: postgres
+    password: postgres
+    url: jdbc:postgresql://localhost:5432/postgres
+  liquibase:
+    change-log: db/db.changelog-master.yaml
+  application:
+    name: ${app.name}
+server:
+  port: 8082
+
+currency:
+  pairs: GBPRUB_GBPUSD_GBPEUR
+
+app:
+  name: currency-history
