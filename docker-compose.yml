@@ -28,6 +28,8 @@ services:
     container_name: currencyg
     build:
       context: C:\Users\Artem\IdeaProjects\currency-generator
+    ports:
+      - "8081:8081"
 
 
 
